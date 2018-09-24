@@ -1,0 +1,40 @@
+.logo{
+    width:60px;
+    margin:3px;
+}
+
+.text{
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content{
+    list-style-type: none;
+    margin: 5px;
+    color:grey;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transform: scale(1.2);
+    color:black;
+}
+
+.navtext{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:-45px;
+}
+@media only screen and (max-width: 600px) {
+    .navtext{
+     margin-top:10px;
+     margin-right: 60px;
+    }
+    .imag{
+        margin-right:250px;
+    }
+}
