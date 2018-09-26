@@ -37,4 +37,29 @@
     .imag{
         margin-right:250px;
     }
+    .clg{
+        margin-right: 100px;
+    }
+    .head{
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 68px;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .navtext{
+    display: flex;
+    flex-direction: column;
+     margin-top:10px;
+     margin-right: 14px;
+    }
+    .ant-input{
+        width:250px !important;
+    }
+    .clg{
+        margin-right: 10px;
+    }
+    .imag{
+        margin-right:250px;
+    }
 }
