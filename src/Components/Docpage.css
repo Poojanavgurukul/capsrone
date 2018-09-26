@@ -1,0 +1,97 @@
+.containerhole {
+  display: flex;
+  justify-content: space-between;
+}
+.subhole {
+  display: flex;
+  flex-direction: column;
+  margin-top: 27px;
+}
+.sometext {
+  font-size: 17px;
+  color: gray;
+}
+.sometext1 {
+  font-size: 17px;
+  color: gray;
+}
+.imagebox {
+  width: 150px;
+  height: 150px;
+  margin-top: 27px;
+  border-radius: 50%;
+  background-image: url("./Images/back5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid black;
+}
+.box {
+  margin-top: 40px;
+}
+textarea.ant-input {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  background: #d9d9d9;
+  -webkit-transition: all 0.3s, height 0s;
+  -o-transition: all 0.3s, height 0s;
+  transition: all 0.3s, height 0s;
+  min-height: 32px;
+}
+.ant-input {
+  font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-variant: tabular-nums;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  padding: 4px 11px;
+  width: 100%;
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.65);
+  background-image: none;
+  border: 2px solid rgba(0, 0, 0, 0.85);
+  border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btnsubmit {
+  color: white;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 18px;
+  border-radius: 1px;
+  background: #5b89b3;
+}
+.btnsubmit:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  background: #257d5f;
+}
+.btndiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.anticon {
+    display: inline-block;
+    font-style: normal;
+    vertical-align: -0.125em;
+    text-align: center;
+    text-transform: none;
+    line-height: 1;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

@@ -46,6 +46,7 @@ class Register extends React.Component {
             <div className="main2">
               <div className="clg clg1 clg2">
                 <div className="containerbox1">
+                  <p className="subhead">Details of Deceased</p>
                   <Form onSubmit={this.handleSubmit} className="login-form">
                     <FormItem>
                       {getFieldDecorator("Name", {
@@ -134,6 +135,7 @@ class Register extends React.Component {
                   </Form>
                 </div>
                 <div className="containerbox2">
+                  <p className="subhead">Details of Person Requesting</p>
                   <Form onSubmit={this.handleSubmit} className="login-form">
                     <FormItem>
                       <Input
@@ -187,13 +189,16 @@ class Register extends React.Component {
                 </div>
               </div>
               <div className="btn">
-                <Button
-                  type="primary"
-                  htmlType="submit"
-                  className="login-form-button"
-                >
-                  Submit
-                </Button>
+                <Link to="/Blockpage">
+                  {" "}
+                  <Button
+                    type="primary"
+                    htmlType="submit"
+                    className="login-form-button"
+                  >
+                    Submit
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
