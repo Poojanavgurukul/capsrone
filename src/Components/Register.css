@@ -6,6 +6,24 @@
   border-color: rgb(102, 102, 102);
   border-style: solid;
   border-radius: 5px;
+  color: black;
+}
+.ant-form {
+  font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.85);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 50px;
+  width: 300px;
+  padding: 0;
+  list-style: none;
 }
 
 .sometext {
@@ -21,107 +39,103 @@
   margin-left: 55px;
 }
 
-.clg{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 100px;
+.clg {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
 }
-.main{
-    width:100%;
-    height:100%;
-    background-color:#d6c9c9;
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #d6c9c9;
 }
-.main2{
-    margin-top: 30px;
-    margin-left: -104px;    
+.main2 {
+  margin-top: 30px;
+  margin-left: -104px;
 }
-.containerbox1{
-    margin:20px;
-    margin-right: 200px;
+.containerbox1 {
+  margin: 20px;
+  margin-right: 200px;
 }
-.containerbox2{
-    margin:20px;
-    margin-right: 100px;   
+.containerbox2 {
+  margin: 20px;
+  margin-right: 100px;
 }
-.head{
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 510px;
+.head {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 510px;
 }
 
 @media only screen and (max-width: 600px) {
-.clg{
+  .clg {
     display: flex;
     flex-direction: column;
     margin-left: 109px;
-}
-.form{
+  }
+  .form {
     margin-left: 54px;
-}
+  }
 }
 @media only screen and (max-width: 1100px) {
-.clg1{
+  .clg1 {
     display: flex;
     flex-direction: column;
     margin-left: 310px;
-}
+  }
 
-.containerbox1{
-    margin-right:100px;  
-}
-.containerbox2{
+  .containerbox1 {
     margin-right: 100px;
-}
-
+  }
+  .containerbox2 {
+    margin-right: 100px;
+  }
 }
 @media only screen and (max-width: 1300px) {
-    .clg2{
-        display: flex;
-        flex-direction: column;
-        margin-left: 300px;
-    }
-    
-    .containerbox1{
-        margin-right:100px;  
-    }
-    .containerbox2{
-        margin-right: 100px;
-    }
-    
-    }
-@media only screen and (max-width: 600px) {
-    .clg1{
-        display: flex;
-        flex-direction: column;
-        margin-left: 115px;
-    }
-    
-    .containerbox1{
-        margin-right:100px;  
-    }
-    .containerbox2{
-        margin-left: 38px;
-    }
-    .head1{
-        position: absolute;
-        margin-top: 42px;
-        margin-left: 72px;
-    }
-    
-    }
-    
-    @media only screen and (max-width: 580px) {
+  .clg2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+  }
 
-        .clg1{
-            display: flex;
-            flex-direction: column;
-            margin-left: 91px;
-        }
-        
-        .containerbox1{
-            margin-left:47px;  
-        }
-        .containerbox2{
-            margin-left: 47 px;
-        }
-    }
+  .containerbox1 {
+    margin-right: 100px;
+  }
+  .containerbox2 {
+    margin-right: 100px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .clg1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 115px;
+  }
+
+  .containerbox1 {
+    margin-right: 100px;
+  }
+  .containerbox2 {
+    margin-left: 38px;
+  }
+  .head1 {
+    position: absolute;
+    margin-top: 42px;
+    margin-left: 72px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .clg1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 91px;
+  }
+
+  .containerbox1 {
+    margin-left: 47px;
+  }
+  .containerbox2 {
+    margin-left: 47 px;
+  }
+}

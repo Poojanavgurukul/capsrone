@@ -23,7 +23,10 @@ class Navbar extends React.Component {
             <Link to="/signup">
               <li className="content">Signup</li>
             </Link>
-           <Link to="/Requestform"> <li className="content">RequestForm</li></Link>
+            <Link to="/Requestform">
+              {" "}
+              <li className="content">RequestForm</li>
+            </Link>
           </div>
           <div>
             <Slider />

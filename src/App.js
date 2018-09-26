@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
-import './App.css';
-import 'antd/dist/antd.css';
-import Hompage from './Components/Homepage';
-
+import React, { Component } from "react";
+import "./App.css";
+import "antd/dist/antd.css";
+import Hompage from "./Components/Homepage";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <Hompage />
+        <Hompage />
       </div>
     );
   }

@@ -1,65 +1,65 @@
-.logo{
-    width:60px;
-    margin:3px;
+.logo {
+  width: 60px;
+  margin: 3px;
 }
 
-.text{
-    display: inline-block;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+.text {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.content{
-    list-style-type: none;
-    margin: 5px;
-    color:grey;
-    font-size: 17px;
-    font-family: 'Times New Roman', Times, serif;
+.content {
+  list-style-type: none;
+  margin: 5px;
+  color: grey;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.content:hover{
-    text-decoration: underline;
-    cursor: pointer;
-    transform: scale(1.2);
-    color:black;
+.content:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transform: scale(1.2);
+  color: black;
 }
 
-.navtext{
-    display: flex;
-    justify-content: flex-end;
-    margin-top:-45px;
+.navtext {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -45px;
 }
 @media only screen and (max-width: 600px) {
-    .navtext{
-     margin-top:10px;
-     margin-right: 60px;
-    }
-    .imag{
-        margin-right:250px;
-    }
-    .clg{
-        margin-right: 100px;
-    }
-    .head{
-        position: absolute;
-        margin-top: 50px;
-        margin-left: 68px;
-    }
+  .navtext {
+    margin-top: 10px;
+    margin-right: 60px;
+  }
+  .imag {
+    margin-right: 250px;
+  }
+  .clg {
+    margin-right: 100px;
+  }
+  .head {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 68px;
+  }
 }
 @media only screen and (max-width: 580px) {
-    .navtext{
+  .navtext {
     display: flex;
     flex-direction: column;
-     margin-top:10px;
-     margin-right: 14px;
-    }
-    .ant-input{
-        width:250px !important;
-    }
-    .clg{
-        margin-right: 10px;
-    }
-    .imag{
-        margin-right:250px;
-    }
+    margin-top: 10px;
+    margin-right: 14px;
+  }
+  .ant-input {
+    width: 250px !important;
+  }
+  .clg {
+    margin-right: 10px;
+  }
+  .imag {
+    margin-right: 250px;
+  }
 }

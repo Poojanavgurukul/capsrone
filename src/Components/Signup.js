@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './Register.css';
+import "./Register.css";
 import logo from "./Images/logo.png";
 import { Form, Icon, Input, Button, Checkbox } from "antd";
 const FormItem = Form.Item;
@@ -33,7 +33,9 @@ class Signup extends React.Component {
             <Link to="/signup">
               <li className="content">Signup</li>
             </Link>
-            <Link to="/Requestform"><li className="content">RequestForm</li></Link>
+            <Link to="/Requestform">
+              <li className="content">RequestForm</li>
+            </Link>
           </div>
         </div>
         <div className="body">
@@ -112,11 +114,11 @@ class Signup extends React.Component {
                   )}
                 </FormItem>
                 <FormItem>
-                  {getFieldDecorator("AdhaarNumber", {
+                  {getFieldDecorator("AadhaarNumber", {
                     rules: [
                       {
                         required: true,
-                        message: "Please input your AdhaarNumber!"
+                        message: "Please input your AadhaarNumber!"
                       }
                     ]
                   })(
@@ -128,7 +130,7 @@ class Signup extends React.Component {
                         />
                       }
                       type="text"
-                      placeholder="AdhaarNumber"
+                      placeholder="AadhaarNumber"
                     />
                   )}
                 </FormItem>
