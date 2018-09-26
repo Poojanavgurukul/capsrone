@@ -1,0 +1,55 @@
+.formnomine{
+    font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.85);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 200px;
+    padding: 0;
+    list-style: none;
+}
+.indent{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 50px;
+}
+.someheads{
+display: inline-block;
+margin: 10px;
+}
+.headtext{
+    margin-left:64px;
+}
+.headsome{
+    text-align: center;
+    margin-top: 25px;
+}
+.colorbox{
+    background: #eadede;
+    width: 100%;
+    height: 100vh;
+}
+.btnbox{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.submitbtn{
+    background: blue;
+    color: white;
+    width: 200px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius:10px;
+}
+.cnlbtn{
+    background: red;
+    color: white;
+    width: 200px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius:10px;
+}

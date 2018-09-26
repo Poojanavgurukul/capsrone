@@ -87,13 +87,14 @@ class NormalLoginForm extends React.Component {
                     Forgot password
                   </a>
                   <div className="btn">
-                    <Button
+                   <Link to="/Blockpage"> <Button
                       type="primary"
                       htmlType="submit"
                       className="login-form-button"
                     >
                       Log in
                     </Button>
+                    </Link>
                   </div>
                 </FormItem>
               </Form>

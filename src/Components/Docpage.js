@@ -1,6 +1,7 @@
 import React from "react";
 import "./Docpage.css";
 import { Input,Icon } from "antd";
+import {Link} from 'react-router-dom';
 const { TextArea } = Input;
 
 class Userwritingpage extends React.Component {
@@ -22,7 +23,7 @@ class Userwritingpage extends React.Component {
           <TextArea rows={40} />
         </div>
         <div className="btndiv">
-          <button className="btnsubmit">Submit</button>
+          <Link to ="/Nomineform"><button className="btnsubmit">Submit</button></Link>
         </div>
       </div>
     );
