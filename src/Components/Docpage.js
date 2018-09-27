@@ -1,6 +1,6 @@
 import React from "react";
 import "./Docpage.css";
-import { Input,Icon } from "antd";
+import { Input } from "antd";
 import {Link} from 'react-router-dom';
 import {Animated} from "react-animated-css";
 
@@ -21,7 +21,6 @@ class Userwritingpage extends React.Component {
           <div className="imagebox" />
         </div>
         <div className="box">
-        <Icon type="form" />
         <h4 style={{display:'inline-block', margin:'3px'}}>Write Your Block here</h4>
           <TextArea rows={40} />
         </div>

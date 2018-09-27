@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "antd": "^3.9.2",
+    "axios": "^0.18.0",
+    "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-animated-css": "^1.0.4",
+    "react-axios": "^2.0.1",
     "react-dom": "^16.5.2",
     "react-dropzone": "^5.1.0",
     "react-router-dom": "^4.3.1",

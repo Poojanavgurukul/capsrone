@@ -192,7 +192,6 @@ class Register extends React.Component {
                 </div>
               </div>
               <div className="btn1">
-                <Link to="/Blockpage">
                   {" "}
                   <Button
                     type="primary"
@@ -201,7 +200,6 @@ class Register extends React.Component {
                   >
                     Submit
                   </Button>
-                </Link>
               </div>
             </div>
           </div>

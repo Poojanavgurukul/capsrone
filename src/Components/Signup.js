@@ -166,13 +166,15 @@ class Signup extends React.Component {
                     Forgot password
                   </a>
                   <div className="btn">
+                  <Link to="/login">
                     <Button
                       type="primary"
                       htmlType="submit"
                       className="login-form-button"
                     >
-                      Log in
+                      Sign up
                     </Button>
+                    </Link>
                   </div>
                 </FormItem>
               </Form>
