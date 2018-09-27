@@ -1,14 +1,17 @@
 import React from "react";
 import "./Nomineform.css";
 import { Input } from "antd";
+import {Animated} from "react-animated-css";
+import {Link} from 'react-router-dom';
 
 class Nomineform extends React.Component {
   render() {
     return (
+      <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
       <div style={{ margin: "30px"}}>
       <div className="colorbox">
         <div className="headsome">
-          <h1 style={{ display: "inline-block",marginTop:"20px" }}>Nomination Form</h1>
+          <h1 style={{ display: "inline-block",marginTop:"20px",fontFamily: "'Courgette', cursive" }}>Nomination Form</h1>
         </div>
         <div>
           <div className="indent">
@@ -88,11 +91,12 @@ class Nomineform extends React.Component {
             <button className="submitbtn">Submit</button>
             </div>
             <div style={{margin:"10px"}}>
-            <button className="cnlbtn">Cancel</button>
+           <Link to ="/"> <button className="cnlbtn">Cancel</button></Link>
             </div>
         </div>
         </div>
       </div>
+      </Animated>
     );
   }
 }

@@ -2,11 +2,14 @@ import React from "react";
 import "./Docpage.css";
 import { Input,Icon } from "antd";
 import {Link} from 'react-router-dom';
+import {Animated} from "react-animated-css";
+
 const { TextArea } = Input;
 
 class Userwritingpage extends React.Component {
   render() {
     return (
+      <Animated animationIn="bounceInRight" animationOut="fadeOut" isVisible={true}>
       <div style={{ margin: "30px" }}>
         <div className="containerhole">
           <span className="sometext">Date Stamp</span>
@@ -26,6 +29,8 @@ class Userwritingpage extends React.Component {
           <Link to ="/Nomineform"><button className="btnsubmit">Submit</button></Link>
         </div>
       </div>
+      </Animated>
+
     );
   }
 }

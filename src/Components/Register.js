@@ -3,6 +3,7 @@ import "./Register.css";
 import { Link } from "react-router-dom";
 import logo from "./Images/logo.png";
 import { Form, Icon, Input, Button } from "antd";
+import {Animated} from "react-animated-css";
 import Basic from "./Documents";
 const FormItem = Form.Item;
 
@@ -39,8 +40,10 @@ class Register extends React.Component {
               <li className="content">RequestForm</li>
             </Link>
           </div>
+        <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+          <div>
           <div className="head head1">
-            <h2>Request Form</h2>
+            <h2 style={{fontFamily: "'Courgette', cursive"}}>Request Form</h2>
           </div>
           <div className="main">
             <div className="main2">
@@ -188,7 +191,7 @@ class Register extends React.Component {
                   <Basic />
                 </div>
               </div>
-              <div className="btn">
+              <div className="btn1">
                 <Link to="/Blockpage">
                   {" "}
                   <Button
@@ -202,6 +205,8 @@ class Register extends React.Component {
               </div>
             </div>
           </div>
+          </div>
+          </Animated>
         </div>
       </div>
     );

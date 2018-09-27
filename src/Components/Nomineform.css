@@ -21,6 +21,7 @@ margin: 10px;
 }
 .headtext{
     margin-left:64px;
+    font-family: 'Pacifico', cursive;
 }
 .headsome{
     text-align: center;
@@ -44,6 +45,7 @@ margin: 10px;
     font-size: 15px;
     padding: 5px;
     border-radius:10px;
+    font-family: 'Pacifico', cursive;
 }
 .cnlbtn{
     background: red;
@@ -52,4 +54,5 @@ margin: 10px;
     font-size: 15px;
     padding: 5px;
     border-radius:10px;
+    font-family: 'Pacifico', cursive;
 }

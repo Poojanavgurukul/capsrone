@@ -21,7 +21,6 @@ class Basic extends React.Component {
           <div className="dropzone">
             <Dropzone onDrop={this.onDrop.bind(this)} className="cls">
               <p className="sometext">click here to select files to upload.</p>
-              <p className="sign">+</p>
             </Dropzone>
           </div>
           <aside>

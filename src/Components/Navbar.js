@@ -2,7 +2,9 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import logo from "./Images/logo.png";
-import Slider from "./Slider.js";
+import Footer from "./Footer";
+import {Animated} from "react-animated-css";
+
 
 class Navbar extends React.Component {
   render() {
@@ -28,9 +30,13 @@ class Navbar extends React.Component {
               <li className="content">RequestForm</li>
             </Link>
           </div>
-          <div>
-            <Slider />
+          <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
+
+          <div className="background">
+            
           </div>
+          </Animated>
+
           <div style={{ marginTop: "20px" }}>
             <div className="row">
               <div className="col-md-4 col-sm-12 col-xs-12 ">
@@ -69,6 +75,7 @@ class Navbar extends React.Component {
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     );
   }

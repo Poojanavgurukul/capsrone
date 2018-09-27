@@ -2,6 +2,7 @@ import React from "react";
 import "./Loginpage.css";
 import { Link } from "react-router-dom";
 import logo from "./Images/logo.png";
+import {Animated} from "react-animated-css";
 import { Form, Icon, Input, Button, Checkbox } from "antd";
 const FormItem = Form.Item;
 
@@ -38,10 +39,11 @@ class NormalLoginForm extends React.Component {
             </Link>
           </div>
         </div>
+        <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
         <div className="body">
           <div className="form">
             <div style={{ margin: "120px" }}>
-              <h1 style={{ marginLeft: "10px" }}>User Login</h1>
+              <h1 style={{ marginLeft: "61px" ,fontFamily: "'Courgette', cursive"}}>User Login</h1>
               <Form onSubmit={this.handleSubmit} className="login-form">
                 <FormItem>
                   {getFieldDecorator("userName", {
@@ -101,6 +103,7 @@ class NormalLoginForm extends React.Component {
             </div>
           </div>
         </div>
+        </Animated>
       </div>
     );
   }

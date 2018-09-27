@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Register.css";
 import logo from "./Images/logo.png";
+import {Animated} from "react-animated-css";
 import { Form, Icon, Input, Button, Checkbox } from "antd";
 const FormItem = Form.Item;
 
@@ -38,10 +39,11 @@ class Signup extends React.Component {
             </Link>
           </div>
         </div>
+        <Animated animationIn="bounceInRight" animationOut="fadeOut" isVisible={true}>
         <div className="body">
           <div className="form">
             <div style={{ margin: "50px" }}>
-              <h1 style={{ marginLeft: "50px" }}>User Signup</h1>
+              <h1 style={{ marginLeft: "50px",fontFamily: "'Courgette', cursive" }}>User Signup</h1>
               <Form onSubmit={this.handleSubmit} className="login-form">
                 <FormItem>
                   {getFieldDecorator("FullName", {
@@ -177,6 +179,7 @@ class Signup extends React.Component {
             </div>
           </div>
         </div>
+        </Animated>
       </div>
     );
   }
