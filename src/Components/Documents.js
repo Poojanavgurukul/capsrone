@@ -16,9 +16,9 @@ class Basic extends React.Component {
   render() {
     return (
       <div>
-        <h4>Upload files</h4>
+        <h4 style={{marginLeft:'6px'}}>Upload Death Certificate</h4>
         <section>
-          <div className="dropzone">
+          <div className="dropzone" style={{marginLeft:"25px"}}>
             <Dropzone onDrop={this.onDrop.bind(this)} className="cls">
               <p className="sometext">click here to select files to upload.</p>
             </Dropzone>

@@ -32,7 +32,6 @@ textarea.ant-input {
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
-  background: #d9d9d9;
   -webkit-transition: all 0.3s, height 0s;
   -o-transition: all 0.3s, height 0s;
   transition: all 0.3s, height 0s;

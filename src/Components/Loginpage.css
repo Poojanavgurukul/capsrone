@@ -18,7 +18,6 @@
 .body {
   width: 100%;
   height: 100%;
-  background-color: #d6c9c9;
 }
 .ant-form label {
   font-size: 14px;
@@ -40,7 +39,6 @@
 .form {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
 }
 .ant-input {
   font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI",

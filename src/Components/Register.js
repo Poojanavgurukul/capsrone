@@ -1,9 +1,8 @@
 import React from "react";
 import "./Register.css";
 import { Link } from "react-router-dom";
-import logo from "./Images/logo.png";
 import { Form, Icon, Input, Button } from "antd";
-import {Animated} from "react-animated-css";
+import { Animated } from "react-animated-css";
 import Basic from "./Documents";
 const FormItem = Form.Item;
 
@@ -19,36 +18,41 @@ class Register extends React.Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-      <div style={{ margin: "30px" }}>
-        <div className="nav">
-          <div className="logos">
-            <img src={logo} alt="img" className="logo" />
-            <p className="text">Secret Wish</p>
+      <div>
+        <div className="navcolor">
+          <div className="nav">
+            <div className="logos">
+              <p className="content1">Secret Wish</p>
+            </div>
+            <div className="navtext">
+              <Link to="/">
+                <li className="content">Home</li>
+              </Link>
+              <Link to="/login">
+                <li className="content">Login</li>
+              </Link>
+              <Link to="/signup">
+                <li className="content">Signup</li>
+              </Link>
+              <Link to="/requestform">
+                {" "}
+                <li className="content">RequestForm</li>
+              </Link>
+            </div>
           </div>
-          <div className="navtext">
-            <Link to="/">
-              <li className="content">Home</li>
-            </Link>
-            <Link to="/login">
-              <li className="content">Login</li>
-            </Link>
-            <Link to="/signup">
-              <li className="content">Signup</li>
-            </Link>
-            <Link to="/Requestform">
-              {" "}
-              <li className="content">RequestForm</li>
-            </Link>
-          </div>
-        <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
-          <div>
-          <div className="head head1">
-            <h2 style={{fontFamily: "'Courgette', cursive"}}>Request Form</h2>
-          </div>
-          <div className="main">
-            <div className="main2">
+        </div>
+        <div>
+          <Animated
+            animationIn="bounceInLeft"
+            animationOut="fadeOut"
+            isVisible={true}
+          >
+            <div>
+              <div className="head head1">
+                <h2 style={{ fontFamily: "ubuntu" }}>Request Form</h2>
+              </div>
               <div className="clg clg1 clg2">
-                <div className="containerbox1">
+                <div className="containerbox1" style={{ marginTop: "117px" }}>
                   <p className="subhead">Details of Deceased</p>
                   <Form onSubmit={this.handleSubmit} className="login-form">
                     <FormItem>
@@ -109,12 +113,12 @@ class Register extends React.Component {
                             />
                           }
                           type="text"
-                          placeholder="Phone Number"
+                          placeholder="Phone "
                         />
                       )}
                     </FormItem>
                     <FormItem>
-                      {getFieldDecorator("AadhaarNumber", {
+                      {getFieldDecorator("Aadhaar", {
                         rules: [
                           {
                             required: true,
@@ -130,80 +134,50 @@ class Register extends React.Component {
                             />
                           }
                           type="text"
-                          placeholder="AadhaarNumber"
+                          placeholder="Aadhaar"
                         />
                       )}
                     </FormItem>
-                    <Basic />
+                    <FormItem>
+                      {getFieldDecorator("Relation", {
+                        rules: [
+                          {
+                            required: true,
+                            message: "Please input your Relation"
+                          }
+                        ]
+                      })(
+                        <Input
+                          prefix={
+                            <Icon
+                              type="user"
+                              style={{ color: "rgba(0,0,0,0.25)" }}
+                            />
+                          }
+                          type="text"
+                          placeholder="Relation"
+                        />
+                      )}
+                    </FormItem>
+                    <div className="document">
+                      <Basic />
+                    </div>
                   </Form>
+                  <div className="btn1">
+                    {" "}
+                    <Link to ="/submission">
+                    <Button
+                      type="primary"
+                      htmlType="submit"
+                      className="login-form-button"
+                    >
+                      Submit
+                    </Button>
+                    </Link>
+                  </div>
                 </div>
-                <div className="containerbox2">
-                  <p className="subhead">Details of Person Requesting</p>
-                  <Form onSubmit={this.handleSubmit} className="login-form">
-                    <FormItem>
-                      <Input
-                        prefix={
-                          <Icon
-                            type="user"
-                            style={{ color: "rgba(0,0,0,0.25)" }}
-                          />
-                        }
-                        placeholder="Name"
-                      />
-                    </FormItem>
-                    <FormItem>
-                      <Input
-                        prefix={
-                          <Icon
-                            type="mail"
-                            style={{ color: "rgba(0,0,0,0.25)" }}
-                          />
-                        }
-                        placeholder="Email"
-                        type="email"
-                      />
-                    </FormItem>
-                    <FormItem>
-                      <Input
-                        prefix={
-                          <Icon
-                            type="phone"
-                            style={{ color: "rgba(0,0,0,0.25)" }}
-                          />
-                        }
-                        type="text"
-                        placeholder="Phone Number"
-                      />
-                    </FormItem>
-                    <FormItem>
-                      <Input
-                        prefix={
-                          <Icon
-                            type="save"
-                            style={{ color: "rgba(0,0,0,0.25)" }}
-                          />
-                        }
-                        type="text"
-                        placeholder="AadhaarNumber"
-                      />
-                    </FormItem>
-                  </Form>
-                  <Basic />
-                </div>
-              </div>
-              <div className="btn1">
-                  {" "}
-                  <Button
-                    type="primary"
-                    htmlType="submit"
-                    className="login-form-button"
-                  >
-                    Submit
-                  </Button>
               </div>
             </div>
-          </div>
-          </div>
           </Animated>
         </div>
       </div>

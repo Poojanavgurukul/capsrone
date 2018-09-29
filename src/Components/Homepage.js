@@ -6,6 +6,8 @@ import Userwritingpage from "./Docpage.js";
 import Register from "./Register.js";
 import Nomineform from './Nomineform.js';
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import Submision from './Aftersubmision';
+import Sub from './AfterNomine';
 
 class Homepage extends React.Component {
   render() {
@@ -15,9 +17,11 @@ class Homepage extends React.Component {
           <Route exact path="/" component={Navbar} />
           <Route path="/login" component={NormalLoginForm} />
           <Route path="/signup" component={Signup} />
-          <Route path="/Requestform" component={Register} />
-          <Route path="/Blockpage" component={Userwritingpage} />
-          <Route path="/Nomineform" component={Nomineform} />
+          <Route path="/requestform" component={Register} />
+          <Route path="/blockpage" component={Userwritingpage} />
+          <Route path="/nomineform" component={Nomineform} />
+          <Route path="/submission" component={Submision} />
+          <Route path="/nominesubmission" component={Sub} />
         </div>
       </Router>
     );

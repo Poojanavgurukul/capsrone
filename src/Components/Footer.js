@@ -4,7 +4,7 @@ import './Footer.css';
 class Footer extends React.Component{
     render(){
         return(
-            <div style={{background:"#c4c4c4"}}>
+            <div style={{background:"#aaa0ad"}}>
                 <hr></hr>
                 <div className="footer">
                 <div>

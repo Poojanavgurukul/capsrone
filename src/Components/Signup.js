@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Register.css";
-import logo from "./Images/logo.png";
 import {Animated} from "react-animated-css";
-import { Form, Icon, Input, Button, Checkbox } from "antd";
+import { Form, Icon, Input, Button} from "antd";
 const FormItem = Form.Item;
 
 class Signup extends React.Component {
@@ -18,32 +17,36 @@ class Signup extends React.Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-      <div style={{ margin: "30px" }}>
-        <div className="nav">
-          <div className="logos">
-            <img src={logo} alt="img" className="logo" />
-            <p className="text">Secret Wish</p>
-          </div>
-          <div className="navtext">
-            <Link to="">
-              <li className="content">Home</li>
-            </Link>
-            <Link to="/login">
-              <li className="content">Login</li>
-            </Link>
-            <Link to="/signup">
-              <li className="content">Signup</li>
-            </Link>
-            <Link to="/Requestform">
-              <li className="content">RequestForm</li>
-            </Link>
+      <div>
+        <div className="navcolor">
+          <div className="nav">
+            <div className="logos">
+              <p className="content1">Secret Wish</p>
+            </div>
+            <div className="navtext">
+              <Link to="/">
+                <li className="content">Home</li>
+              </Link>
+              <Link to="/login">
+                <li className="content">Login</li>
+              </Link>
+              <Link to="/signup">
+                <li className="content">Signup</li>
+              </Link>
+              <Link to="/requestform">
+                {" "}
+                <li className="content">RequestForm</li>
+              </Link>
+            </div>
           </div>
         </div>
+        
+      <div>
         <Animated animationIn="bounceInRight" animationOut="fadeOut" isVisible={true}>
         <div className="body">
           <div className="form">
-            <div style={{ margin: "50px" }}>
-              <h1 style={{ marginLeft: "50px",fontFamily: "'Courgette', cursive" }}>User Signup</h1>
+            <div style={{ margin: "50px" ,marginTop:"101px"}}>
+              <h1 style={{ marginLeft: "50px",fontFamily: "ubuntu" }}>User Signup</h1>
               <Form onSubmit={this.handleSubmit} className="login-form">
                 <FormItem>
                   {getFieldDecorator("FullName", {
@@ -116,11 +119,11 @@ class Signup extends React.Component {
                   )}
                 </FormItem>
                 <FormItem>
-                  {getFieldDecorator("AadhaarNumber", {
+                  {getFieldDecorator("Aadhaar", {
                     rules: [
                       {
                         required: true,
-                        message: "Please input your AadhaarNumber!"
+                        message: "Please input your Aadhaar!"
                       }
                     ]
                   })(
@@ -132,16 +135,16 @@ class Signup extends React.Component {
                         />
                       }
                       type="text"
-                      placeholder="AadhaarNumber"
+                      placeholder="Aadhaar"
                     />
                   )}
                 </FormItem>
                 <FormItem>
-                  {getFieldDecorator("PhoneNumber", {
+                  {getFieldDecorator("Phone", {
                     rules: [
                       {
                         required: true,
-                        message: "Please input your PhoneNumber!"
+                        message: "Please input your Phone!"
                       }
                     ]
                   })(
@@ -153,18 +156,11 @@ class Signup extends React.Component {
                         />
                       }
                       type="text"
-                      placeholder="PhoneNumber"
+                      placeholder="Phone"
                     />
                   )}
                 </FormItem>
                 <FormItem>
-                  {getFieldDecorator("remember", {
-                    valuePropName: "checked",
-                    initialValue: true
-                  })(<Checkbox>Remember me</Checkbox>)}
-                  <a className="login-form-forgot" href="">
-                    Forgot password
-                  </a>
                   <div className="btn">
                   <Link to="/login">
                     <Button
@@ -182,6 +178,7 @@ class Signup extends React.Component {
           </div>
         </div>
         </Animated>
+      </div>
       </div>
     );
   }

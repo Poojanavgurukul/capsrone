@@ -6,15 +6,25 @@
 .text {
   display: inline-block;
   font-size: 20px;
-  font-family: 'Pacifico', cursive;
 }
 
 .content {
   list-style-type: none;
   margin: 5px;
-  color: grey;
+  color: white;
   font-size: 17px;
   font-family: "Times New Roman", Times, serif;
+}
+.content1 {
+  list-style-type: none;
+  margin: 5px;
+  color:black;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.cardtext{
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .content:hover {
@@ -23,18 +33,29 @@
   transform: scale(1.2);
   color: black;
 }
+.cards{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 30px;
+}
 
 .navtext {
   display: flex;
   justify-content: flex-end;
   margin-top: -45px;
+  padding: 10px;
+}
+.navcolor{
+  background: #aaa0ad;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 .background{
-  background-image: url('./Images/back2.jpg');
+  background-image: url('./Images/back1.jpg');
   background-size: cover;
   width: 100%;
-  margin: 20px;
-  height:100vh;
+  height:110vh;
   margin-left: 2px;
 }
 @media only screen and (max-width: 600px) {

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Loginpage.css";
 import { Link } from "react-router-dom";
-import logo from "./Images/logo.png";
 import {Animated} from "react-animated-css";
 import { Form, Icon, Input, Button, Checkbox } from "antd";
 const FormItem = Form.Item;
@@ -18,32 +17,35 @@ class NormalLoginForm extends React.Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-      <div style={{ margin: "30px" }}>
-        <div className="nav">
-          <div className="logos">
-            <img src={logo} alt="img" className="logo" />
-            <p className="text">Secret Wish</p>
-          </div>
-          <div className="navtext">
-            <Link to="">
-              <li className="content">Home</li>
-            </Link>
-            <Link to="/login">
-              <li className="content">Login</li>
-            </Link>
-            <Link to="/signup">
-              <li className="content">Signup</li>
-            </Link>
-            <Link to="/Requestform">
-              <li className="content">RequestForm</li>
-            </Link>
+      <div>
+        <div className="navcolor">
+          <div className="nav">
+            <div className="logos">
+              <li className="content1">Secret Wish</li>
+            </div>
+            <div className="navtext">
+              <Link to="/">
+                <li className="content">Home</li>
+              </Link>
+              <Link to="/login">
+                <li className="content">Login</li>
+              </Link>
+              <Link to="/signup">
+                <li className="content">Signup</li>
+              </Link>
+              <Link to="/requestform">
+                {" "}
+                <li className="content">RequestForm</li>
+              </Link>
+            </div>
           </div>
         </div>
+      <div>
         <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
         <div className="body">
           <div className="form">
             <div style={{ margin: "120px" }}>
-              <h1 style={{ marginLeft: "61px" ,fontFamily: "'Courgette', cursive"}}>User Login</h1>
+              <h1 style={{ marginLeft: "61px" ,fontFamily: "ubuntu"}}>User Login</h1>
               <Form onSubmit={this.handleSubmit} className="login-form">
                 <FormItem>
                   {getFieldDecorator("userName", {
@@ -89,7 +91,7 @@ class NormalLoginForm extends React.Component {
                     Forgot password
                   </a>
                   <div className="btn">
-                   <Link to="/Blockpage"> <Button
+                   <Link to="/blockpage"> <Button
                       type="primary"
                       htmlType="submit"
                       className="login-form-button"
@@ -104,6 +106,7 @@ class NormalLoginForm extends React.Component {
           </div>
         </div>
         </Animated>
+      </div>
       </div>
     );
   }
